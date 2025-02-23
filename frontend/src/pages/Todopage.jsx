@@ -3,7 +3,6 @@ import plusImage from "../assets/plus.png"
 import TodoComponent from "../component/TodoComponent"
 import axios from "axios"
 import { useEffect, useState } from "react"
-import Footer from "../component/Footer"
 
 
 //Input component 
@@ -25,7 +24,7 @@ function Todopage()
     //fetch all todos of the user from backend
     useEffect(()=>{
         try{
-            axios.get("http://localhost:3000/api/v1/todo/getTodos", {
+            axios.get("https://keeperapp-yol9.onrender.com/api/v1/todo/getTodos", {
                 headers: {
                     Authorization: "Bearer " + localStorage.getItem("token")
                 }
@@ -51,7 +50,7 @@ function Todopage()
                         <button className="rounded-full w-12 h-12 bg-yellow-400 flex justify-center cursor-pointer hover:bg-yellow-600 shadow-lg" onClick={async()=>{
                             try{
                                 //add a new todo
-                                const response = await axios.post("http://localhost:3000/api/v1/todo/addtodo", {
+                                const response = await axios.post("https://keeperapp-yol9.onrender.com/api/v1/todo/addtodo", {
                                     title: title,
                                     description: description
                                 },{
@@ -86,7 +85,7 @@ function Todopage()
                 onDelete={async()=>{
                     //delete the todo using _id and trigger re-render
                     try{
-                        const response = await axios.post("http://localhost:3000/api/v1/todo/deleteTodo", {
+                        const response = await axios.post("https://keeperapp-yol9.onrender.com/api/v1/todo/deleteTodo", {
                             id: todo._id
                         }, {
                             headers: {

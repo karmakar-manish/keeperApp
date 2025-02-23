@@ -14,7 +14,7 @@ function NavBar(){
             <NavButton label={"SignIn as Guest"} onClick={async()=>{
                 //signin as guest user
                 try{
-                    const response = await axios.post("http://localhost:3000/api/v1/user/signin", {
+                    const response = await axios.post("https://keeperapp-yol9.onrender.com/api/v1/user/signin", {
                         username: "guest@gmail.com",
                         password: "123456"
                     })
@@ -41,7 +41,7 @@ function TodoPageNavBar(){
     const [lname, setLname] = useState("")
 
     useEffect(()=>{
-        axios.get("http://localhost:3000/api/v1/user/getUserData", {
+        axios.get("https://keeperapp-yol9.onrender.com/api/v1/user/getUserData", {
             headers : {
                 Authorization: "Bearer " + localStorage.getItem("token")
             }
