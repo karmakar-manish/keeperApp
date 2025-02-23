@@ -42,7 +42,7 @@ function Todopage()
     return <div className="flex flex-col ">
         <TodoPageNavBar/>
         <div className="flex justify-center flex-grow">
-            <div className="w-120 h-40 mt-10  shadow-2xl rounded-md border-1 p-4">
+            <div className="w-[95%] md:w-[30%] h-40 mt-10  shadow-2xl rounded-md border p-4">
                 <div className="flex flex-col justify-center">
                     <InputComponent placeholder={"Title"} onChange={e=>setTitle(e.target.value)} value={title}/>
                     <InputComponent placeholder={"Description"} onChange={e=>setDescription(e.target.value)} value={description}/>
@@ -71,9 +71,11 @@ function Todopage()
                                 alert("Error Adding todo")
                             }
                         }}>
-                            <div className="flex flex-col justify-center">
-                                <img src={plusImage} className="invert h-6 w-6" />
-                            </div>
+                            {/* <div className="flex justify-center"> */}
+                                <div className="flex justify-center items-center p-1">
+                                    <img src={plusImage} className="flex  justify-center invert size-9" />
+                                </div>
+                            {/* </div> */}
                         </button>
                     </div>
                 </div>
