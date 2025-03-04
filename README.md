@@ -1,6 +1,5 @@
 # KeeperApp 📝
 # Link : https://keeperapp-manish.netlify.app/signup
-Currently the backend suffers from cold-start problem. Wait for few seconds after clicking any button to let the server start on.
 
 KeeperApp is a simple and efficient to-do list application that allows users to **sign up, sign in, and manage their tasks**. Built with **React** for the frontend and **Node.js, Express, and MongoDB** for the backend, it ensures a smooth and dynamic user experience.
 
@@ -22,3 +21,5 @@ KeeperApp is a simple and efficient to-do list application that allows users to 
 - Node.js & Express 🚀
 - MongoDB 🗄️
 - JWT Authentication 🔑
+(Currently the backend suffers from cold-start problem. Wait for few seconds after clicking any button to let the server start on.)
+(Currently the backend suffers from cold-start problem. Wait for few seconds after clicking any button to let the server start on.)
