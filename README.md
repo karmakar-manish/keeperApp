@@ -22,5 +22,5 @@ KeeperApp is a simple and efficient to-do list application that allows users to 
 - MongoDB 🗄️
 - JWT Authentication 🔑
 - 
-# Currently the backend suffers from cold-start problem. Wait for few seconds after clicking any button to let the server start on.
+### Currently the backend suffers from cold-start problem. Wait for few seconds after clicking any button to let the server start on.
 
